@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-cyan);
+    background-image: url('images/bg-pattern-top.svg') ,url('images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: right 700px bottom 235px, top 280px left 700px ;
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+.image img{
+    max-width: 100%;
+}
+.card-info img{
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    left: 50%;
+    top:32%
+}
+.card-info-title{
+    margin-top: 60px;
+}
+.card-info-title-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-info-title h1{
+    font-size: 20px;
+    color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+    font-weight: 700;
+}
+.card-info-title span{
+    color: var(--Dark-grayish-blue);
+    margin-left: 10px;
+}
+.card-info-title p{
+    text-align: center;
+    margin-top: 15px;
+    color: var(--Dark-grayish-blue);
+}
+hr{
+    background-color: #ccc;
+    margin: 35px 0;
+    height: 1px;
+    border: none;
+}
+.card-info-social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px 20px;
+}
+.card-info-social span{
+    display: block;
+    text-align: center;
+}
+.card-info-social span:first-child{
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.card-info-social span:last-child{
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+}
+.attribution { 
+    font-size: 11px;
+     text-align: center;
+    }
+.attribution a
+ { color: hsl(228, 45%, 44%); 
+}
+@media (min-width:375px) and (max-width:800px) {
+    body{
+        background-position: right 215px bottom 100px, top 230px left 150px ;
+        
+
+    }
+}
